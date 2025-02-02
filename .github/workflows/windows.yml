@@ -1,11 +1,6 @@
 name: Windows CMake
 on:
-  workflow_call:
-    inputs:
-      extra_resolve_options:
-        description: "Extra Resolve Options"
-        type: string
-        required: false
+  push:
 env:
   EXTRA_RESOLVE_OPTIONS: ${{ github.event.inputs.extra_resolve_options }}
 
