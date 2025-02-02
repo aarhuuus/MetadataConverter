@@ -12,6 +12,12 @@ jobs:
       - name: Build Project
         uses: threeal/cmake-action@v2.1.0
 
+      - name: List Current Directory
+        run: ls
+
+      - name: List Build Directory
+        run: ls ./build
+
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
