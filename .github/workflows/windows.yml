@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 45
     strategy:
       fail-fast: false
-    runs-on: [self-hosted, windows, cmake, builder]
+    runs-on: [windows, cmake, builder]
     name: ${{ matrix.os }}
     steps:
       - name: Checkout
